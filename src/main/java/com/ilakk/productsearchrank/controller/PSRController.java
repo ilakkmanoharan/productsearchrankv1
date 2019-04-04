@@ -40,9 +40,9 @@ public class PSRController {
 
 	@GetMapping("/estimate")
 	@Produces(MediaType.APPLICATION_JSON)
-	@ApiOperation(value = "Returns the rank of the keyword", notes = "The range is from 1 to 100, 1 being the lowest score")
+	@ApiOperation(value = "Returns the search-volume score of the keyword", notes = "The range is from 1 to 100")
 	@ApiResponses(value = {
-			@ApiResponse(code = 200, message = "Returned ", response = String.class),
+			@ApiResponse(code = 200, message = "Returned the score", response = String.class),
 			@ApiResponse(code = 500, message = "Internal Server Error"),
 			@ApiResponse(code = 404, message = "No result returned") })
 
