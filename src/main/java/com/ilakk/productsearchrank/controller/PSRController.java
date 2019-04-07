@@ -22,7 +22,6 @@ import com.ilakk.productsearchrank.service.IPSRService;
 /** 
  * 
  * @author Ilakkuvaselvi Manoharan, 2019
- * 
  * @copyright GNU General Public License v3
  * No reproduction in whole or part without maintaining this copyright notice
  * and imposing this condition on any subsequent users.
@@ -35,7 +34,7 @@ import com.ilakk.productsearchrank.service.IPSRService;
 public class PSRController {
 
 	@Autowired
-    @Qualifier("service")
+        @Qualifier("service")
 	private IPSRService iPSRService;
 
 	@GetMapping("/estimate")
