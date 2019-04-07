@@ -22,7 +22,6 @@ import org.springframework.context.annotation.Primary;
 /**
  *
  * @author Ilakkuvaselvi Manoharan, 2019
- *
  * @copyright GNU General Public License v3
  * No reproduction in whole or part without maintaining this copyright notice
  * and imposing this condition on any subsequent users.
