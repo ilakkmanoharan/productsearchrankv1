@@ -37,7 +37,6 @@ import com.ilakk.productsearchrank.dataprocessor.*;
 /** 
  * 
  * @author Ilakkuvaselvi Manoharan, 2019
- * 
  * @copyright GNU General Public License v3
  * No reproduction in whole or part without maintaining this copyright notice
  * and imposing this condition on any subsequent users.
@@ -48,25 +47,25 @@ import com.ilakk.productsearchrank.dataprocessor.*;
 @Component("service")
 public class PSRServiceImpl implements IPSRService{
 	
-	private WebClient client;
-	private String searchString;
+    private WebClient client;
+    private String searchString;
     private String baseAddr;
     private String autocompleteUri;
     private List<String> dataSets;
 	
-	@Autowired
+    @Autowired
     @Qualifier("appconfig")
     private AppConfig appconfig;
 	
-	@Autowired
+    @Autowired
     @Qualifier("parser")
     private Parser parser;
 	
-	@Autowired
+    @Autowired
     @Qualifier("wordcountranker")
     private WordCountRanker wordcountranker;
 	
-	@PostConstruct
+    @PostConstruct
     public void init(){
 		
 		this.baseAddr = appconfig.getBaseAddr();
